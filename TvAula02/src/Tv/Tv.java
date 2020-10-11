@@ -14,10 +14,10 @@ import Tv.ModeloTv;
 public class Tv {
     public static void main (String[] args){
         ModeloTv tv1 = new ModeloTv();
-        tv1.cor = "preto";
-        tv1.ligado = false;
-        tv1.canal = 5;
-        tv1.modelo = "Asus Smart";
+        tv1.setCor("preto");
+        tv1.setLigado(false);
+        tv1.setCanal(5);
+        tv1.setModelo("Asus Smart");
         
         tv1.ligar();
         tv1.status();

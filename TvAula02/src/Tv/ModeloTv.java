@@ -10,9 +10,41 @@ package Tv;
  * @author learn
  */
 public class ModeloTv {
-    boolean ligado;
-    String cor, modelo;
-    int canal;
+    private boolean ligado;
+    private String cor, modelo;
+    private int canal;
+
+    public boolean isLigado() {
+        return ligado;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getCanal() {
+        return canal;
+    }
+
+    public void setLigado(boolean ligado) {
+        this.ligado = ligado;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void setCanal(int canal) {
+        this.canal = canal;
+    }
     
     void ligar() {
         ligado = true;
@@ -23,8 +55,8 @@ public class ModeloTv {
     }
     
     void status() {
-        System.out.println("A TV está ligada? " + ligado + "\nQual a cor da TV? "
-            + cor + "\nual o modelo da TV? " + modelo + 
-            "\nQual é o canal na TV? " + canal);
+        System.out.println("A TV está ligada? " + this.ligado + "\nQual a cor da TV? "
+            + cor + "\nQual o modelo da TV? " + this.modelo + 
+            "\nQual é o canal na TV? " + this.canal);
     }
 }
