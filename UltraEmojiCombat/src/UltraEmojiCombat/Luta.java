@@ -19,22 +19,23 @@ public class Luta {
     public void marcarLuta(Lutador l1, Lutador l2) {
         if (l1.getCategoria().equals(l2.getCategoria()) && l1 != l2) {
             this.setAprovada(true);
-            this.desafiado = l1;
-            this.desafiante = l2;
+            this.setDesafiado(l1);
+            this.setDesafiante(l2);
         } else {
             this.setAprovada(false);
-            this.desafiado = null;
-            this.desafiante = null;
+            this.setDesafiado(null);
+            this.setDesafiante(null);
         }
     }
     
     public void lutar() {
         if (this.getAprovada()) {
+            System.out.println("### DESAFIADO ###");
             this.desafiado.apresentar();
+            System.out.println("### DESAFIANTE ###");
             this.desafiante.apresentar();
             double vencedor = 0 + Math.random() * 3;
             int vence = (int) vencedor;
-            System.out.println(vence);
             switch (vence) {
                 case 0: //Empate
                     System.out.println("Empatou!");
@@ -42,20 +43,19 @@ public class Luta {
                     this.desafiante.empatarLuta();
                     break;
                 case 1: //Ganhou Desafiado
-                    System.out.println("O Desafiado Venceu!");
+                    System.out.println("O Desafiado " + this.desafiado.getNome() + " Venceu!");
                     this.desafiado.ganharLuta();
                     this.desafiante.perderLuta();
                     break;
                 case 2: //Ganhou Desafiante
-                    System.out.println("O Desafiante Venceu!");
+                    System.out.println("O Desafiante " + this.desafiante.getNome()+ " Venceu!");
                     this.desafiado.perderLuta();
                     this.desafiante.ganharLuta();
                     break;
-                default:
-                    break;
             }
+            System.out.println("");
         } else {
-            System.out.println("Luta não pode acontecer");
+            System.out.println("Luta não pode acontecer!");
         }
     }
     
