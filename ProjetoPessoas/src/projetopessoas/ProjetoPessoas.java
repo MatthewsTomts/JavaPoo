@@ -9,7 +9,7 @@ package projetopessoas;
  *
  * @author learn
  */
-public class ProjetosPessoas {
+public class ProjetoPessoas {
 
     /**
      * @param args the command line arguments
@@ -31,7 +31,7 @@ public class ProjetosPessoas {
         
         p2.setCurso("A Arte da Espada");
         p3.setSalario(3000.34f);
-        p4.setSetor("Sonoplástia");
+        p4.setSetor("Sonoplastia");
         
         System.out.println(p2.apresenta());
         System.out.println("O Salário da " + p3.getNome() + " é R$" + p3.getSalario());
