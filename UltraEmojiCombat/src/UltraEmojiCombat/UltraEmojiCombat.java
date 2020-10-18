@@ -27,19 +27,19 @@ public class UltraEmojiCombat {
         uec01.lutar();
         
         
-        /*l[1].ganharLuta();
+        l[1].ganharLuta();
         l[0].perderLuta();
         l[3].setPeso(92);
         l[2].setPeso(100);
         l[4].setIdade(20);
-        l[5].setIdade(30);*/
+        l[5].setIdade(30);
         
         l[0].status();
         l[1].status();
-        /*l[2].status();
+        l[2].status();
         l[3].status();
         l[4].apresentar();
-        l[5].apresentar();*/
+        l[5].apresentar();
     }
     
 }
