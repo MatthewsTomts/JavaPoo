@@ -12,6 +12,9 @@ package aula012;
 public class Mamifero extends Animal{
     protected String corPelo;
     
+    public Mamifero() {
+    }
+    
     @Override
     public void locomover() {
         System.out.println("Correndo");

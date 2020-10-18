@@ -17,18 +17,20 @@ public class Aula012 {
     public static void main(String[] args) {
         // TODO code application logic here
         Mamifero[] m = new Mamifero[2];
+        m[0] = new Mamifero(); //Declarando os espaços do vetor m[]
+        m[1] = new Mamifero();
         Reptil r = new Reptil();
         Peixe p = new Peixe();
         Ave a = new Ave();
         Canguru k = new Canguru();
         Cachorro c = new Cachorro();
         
-        m[1].setPeso(85.6f);
-        m[1].setIdade(2);
-        m[1].setMembros(4);
-        m[1].locomover();
-        m[1].alimentar();
-        m[1].emitirSom();
+        m[0].setPeso(85.6f);
+        m[0].setIdade(2);
+        m[0].setMembros(4);
+        m[0].locomover();
+        m[0].alimentar();
+        m[0].emitirSom();
         System.out.println("");
         
         r.setPeso(200);

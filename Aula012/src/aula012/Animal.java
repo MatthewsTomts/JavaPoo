@@ -13,6 +13,12 @@ public abstract class Animal {
     protected float peso;
     protected int idade, membros;
 
+    public Animal() {
+        this.peso = 0f;
+        this.idade = 0;
+        this.membros = 0;
+    }
+
     public float getPeso() {
         return peso;
     }
