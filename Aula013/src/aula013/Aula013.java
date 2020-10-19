@@ -17,7 +17,13 @@ public class Aula013 {
     public static void main(String[] args) {
         // TODO code application logic here
         Cachorro c = new Cachorro();
+        Mamifero m = new Mamifero();
+        Lobo l = new Lobo();
         
+        c.emitirSom();
+        l.emitirSom();
+        m.emitirSom();
+        System.out.println("");
         c.reagir("Olá");
         c.reagir("Vai apanhar");
         System.out.println("");
