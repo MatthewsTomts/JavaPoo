@@ -27,9 +27,13 @@ public class ProjetoYoutube {
         g[0] = new Gafanhoto("Roger", "M", 20, "Morho");
         g[1] = new Gafanhoto("Oliver", "M", 23, "Morho");
         
+        Visualizacao vis = new Visualizacao(g[1], v[4]);
+        
         g[1].viuMaisUm();
+        vis.avaliar();
         System.out.println(g[1].toString());
         System.out.println(v[4].toString());
+        System.out.println(vis.toString());
     }
     
 }

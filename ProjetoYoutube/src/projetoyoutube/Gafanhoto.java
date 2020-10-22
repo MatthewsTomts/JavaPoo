@@ -16,7 +16,7 @@ public class Gafanhoto extends Pessoa {
     public Gafanhoto(String nom, String sex, int idad, String login) {
         super(nom, sex, idad);
         this.login = login;
-        this.totAssistido = 0;
+        this.setTotAssistido(-1);
         
     }
     
@@ -26,7 +26,7 @@ public class Gafanhoto extends Pessoa {
 
     @Override
     public String toString() {
-        return super.toString() + ", login: " + login + ", totAssistido: " + totAssistido;
+        return super.toString() + ", Login: " + login + ", Total assistido: " + totAssistido;
     }
     
     @Override
